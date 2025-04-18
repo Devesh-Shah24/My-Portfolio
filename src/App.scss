@@ -1,0 +1,33 @@
+.App{
+  height: 100%;
+
+  &__main-page-content{
+      height: calc(100% - 80px);
+  }
+}
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+
+  svg {
+    color: #222;
+    transition: color 0.3s ease;
+  }
+
+  body.dark & svg {
+    color: #f5f5f5;
+  }
+}
