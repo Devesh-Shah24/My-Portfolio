@@ -5,6 +5,8 @@ import { Animate } from "react-simple-animate"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { SiFreelancer } from "react-icons/si";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import Resume from '../resume/Devesh_Kumar_Resume.pdf';
 
 
 const Home = () => {
@@ -53,12 +55,15 @@ const Home = () => {
                             </a>
                         </div>
                         <div className='button'>
-                            <a href="/path-to-cv.pdf" className="nav-btn" download>
+                            {/* <a href="/path-to-cv.pdf" className="nav-btn" download>
+                                Download CV
+                            </a> */}
+                            <a href={Resume} className="nav-btn" download="Devesh_Kumar_Resume.pdf">
                                 Download CV
                             </a>
-                            <a href="#contact" className="nav-btn">
+                            <Link to="/contact" className="nav-btn">
                                 Contact Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
