@@ -55,9 +55,6 @@ const Home = () => {
                             </a>
                         </div>
                         <div className='button'>
-                            {/* <a href="/path-to-cv.pdf" className="nav-btn" download>
-                                Download CV
-                            </a> */}
                             <a href={Resume} className="nav-btn" download="Devesh_Kumar_Resume.pdf">
                                 Download CV
                             </a>
