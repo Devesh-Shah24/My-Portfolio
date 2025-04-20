@@ -6,7 +6,7 @@ import "./styles.scss";
 
 const Contact = () => {
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbxTTQZryLWCWIVT-6ocWwI7-L21-pGvoSE1lrcAXfGaw6mZgzhATKTvYdajL_KOnJ_2kA/exec";
+    "https://script.google.com/macros/s/AKfycbx-GoajAx7OtztBP57rSrf-Knc8i39IiMbVRyRHgbNRzw6RVPWpWoRmoakgoSsD4Imu/exec";
 
   const [formData, setFormData] = useState({
     name: "",
